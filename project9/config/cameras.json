@@ -1,0 +1,62 @@
+{
+  "cameras": [
+    {
+      "id": "camera_1",
+      "name": "Main Entrance",
+      "type": "ip",
+      "url": "rtsp://admin:password@192.168.1.100:554/stream1",
+      "location": "Building A - Main Entrance",
+      "enabled": true,
+      "settings": {
+        "frame_rate": 30,
+        "resolution": "1920x1080",
+        "processing_interval": 0.1
+      }
+    },
+    {
+      "id": "camera_2",
+      "name": "Computer Lab",
+      "type": "rpi",
+      "device_id": 0,
+      "location": "Building B - Computer Lab",
+      "enabled": true,
+      "settings": {
+        "frame_rate": 25,
+        "resolution": "640x480",
+        "processing_interval": 0.2
+      }
+    },
+    {
+      "id": "camera_3",
+      "name": "Library Entrance",
+      "type": "ip",
+      "url": "rtsp://admin:password@192.168.1.101:554/stream1",
+      "location": "Building C - Library",
+      "enabled": true,
+      "settings": {
+        "frame_rate": 30,
+        "resolution": "1280x720",
+        "processing_interval": 0.1
+      }
+    },
+    {
+      "id": "camera_4",
+      "name": "Cafeteria",
+      "type": "rpi",
+      "device_id": 1,
+      "location": "Building A - Cafeteria",
+      "enabled": false,
+      "settings": {
+        "frame_rate": 20,
+        "resolution": "640x480",
+        "processing_interval": 0.3
+      }
+    }
+  ],
+  "global_settings": {
+    "default_frame_rate": 30,
+    "default_processing_interval": 0.1,
+    "max_cameras": 10,
+    "auto_start": true
+  }
+}
